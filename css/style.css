@@ -1,11 +1,11 @@
 * {
-  margin: 0;
+	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
 :root {
-  font-size: 62.5%;
+	font-size: 62.5%;
 	--bg: hsl(222, 26%, 31%);
 	--text: hsl(221, 14%, 31%);
 	--toggle-bg: hsl(223, 31%, 20%);
@@ -17,40 +17,47 @@
 	--reset-del-bg: hsl(225, 21%, 49%);
 	--reset-del-shadow: hsl(224, 28%, 35%);
 	--top: white;
-  --white: white
+	--white: white;
 }
 
 body.light {
-  --bg: hsl(0, 0%, 90%);
-  --text: hsl(60, 10%, 19%);
-  --top: --text;
-  --toggle-bg: hsl(0, 5%, 81%);
-  --equal-bg:hsl(25, 98%, 40%);
-  --equal-shadow: hsl(25, 99%, 27%);
-  --screen-bg: hsl(0, 0%, 93%);
-  --key-bg: hsl(45, 7%, 89%);
-  --key-shadow: hsl(35, 11%, 61%);
-  --reset-del-bg: hsl(185, 42%, 37%);
-  --reset-del-shadow: hsl(185, 58%, 25%);
+	--bg: hsl(0, 0%, 90%);
+	--text: hsl(60, 10%, 19%);
+	--top: --text;
+	--toggle-bg: hsl(0, 5%, 81%);
+	--equal-bg: hsl(25, 98%, 40%);
+	--equal-shadow: hsl(25, 99%, 27%);
+	--screen-bg: hsl(0, 0%, 93%);
+	--key-bg: hsl(45, 7%, 89%);
+	--key-shadow: hsl(35, 11%, 61%);
+	--reset-del-bg: hsl(185, 42%, 37%);
+	--reset-del-shadow: hsl(185, 58%, 25%);
 }
 
 body.violet {
-  --bg: hsl(268, 75%, 9%);
-  --text: hsl(52, 100%, 62%);
-  --top: hsl(52, 100%, 62%);
-  --toggle-bg: hsl(268, 71%, 12%);
-  --equal-bg:hsl(176, 100%, 44%);
-  --equal-shadow: hsl(177, 92%, 70%);
-  --screen-bg: hsl(268, 71%, 12%);
-  --key-bg: hsl(268, 47%, 21%);
-  --key-shadow: hsl(290, 70%, 36%);
-  --reset-del-bg: hsl(281, 89%, 26%);
-  --reset-del-shadow: hsl(285, 91%, 52%);
+	--bg: hsl(268, 75%, 9%);
+	--text: hsl(52, 100%, 62%);
+	--top: hsl(52, 100%, 62%);
+	--toggle-bg: hsl(268, 71%, 12%);
+	--equal-bg: hsl(176, 100%, 44%);
+	--equal-shadow: hsl(177, 92%, 70%);
+	--screen-bg: hsl(268, 71%, 12%);
+	--key-bg: hsl(268, 47%, 21%);
+	--key-shadow: hsl(290, 70%, 36%);
+	--reset-del-bg: hsl(281, 89%, 26%);
+	--reset-del-shadow: hsl(285, 91%, 52%);
 }
 
 body {
 	font-family: 'League Spartan', sans-serif;
 	font-size: 3.2rem;
+}
+
+button {
+	transition: opacity 0.3s;
+}
+button:hover {
+	opacity: 70%;
 }
 
 .main {
@@ -60,34 +67,34 @@ body {
 	align-items: center;
 	background-color: var(--bg);
 	color: var(--top);
-  transition: all .3s;
+	transition: all 0.3s;
 }
 .main .calc {
 	width: 300px;
 }
 .main .calc__top {
-  display: flex;
+	display: flex;
 	flex-direction: row;
 }
 .main .calc__top h1 {
-  font-size: 3.2rem;
+	font-size: 3.2rem;
 	align-self: flex-end;
 	margin-right: 3em;
 }
 .main .calc__top-theme {
-  display: flex;
+	display: flex;
 	align-self: flex-end;
 	text-transform: uppercase;
 	font-size: 1.6rem;
 }
 .main .calc__top-theme span {
-  align-self: flex-end;
+	align-self: flex-end;
 }
 .main .calc__top-theme-themes {
-  margin-left: 1em;
+	margin-left: 1em;
 }
 .main .calc__top-theme-themes .nums {
-  display: flex;
+	display: flex;
 	margin-left: 0.3em;
 	justify-content: space-evenly;
 	width: 90px;
@@ -110,12 +117,12 @@ body {
 }
 .main .calc__screen,
 .main .calc__body {
-  margin: 0.7em 0;
+	margin: 0.7em 0;
 	width: 100%;
 	border-radius: 7px;
 }
 .main .calc__screen {
-  text-align: right;
+	text-align: right;
 	height: 90px;
 	background-color: var(--screen-bg);
 }
@@ -124,7 +131,7 @@ body {
 	line-height: 90px;
 }
 .main .calc__body {
-  padding: 0.7em;
+	padding: 0.7em;
 	height: 350px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -133,7 +140,7 @@ body {
 	background-color: var(--toggle-bg);
 }
 .main .calc__body button {
-  border-radius: 5px;
+	border-radius: 5px;
 	padding-top: 0.2em;
 	font-family: 'League Spartan', sans-serif;
 	font-size: 2.5rem;
@@ -145,11 +152,11 @@ body {
 }
 .main .calc__body .reset,
 .main .calc__body .equal {
-  grid-row: 5/6;
+	grid-row: 5/6;
 }
 .main .calc__body .reset,
 .main .calc__body .del {
-  text-transform: uppercase;
+	text-transform: uppercase;
 	font-size: 2rem;
 	background-color: var(--reset-del-bg);
 	box-shadow: 0 5px 0.5px var(--reset-del-shadow);
@@ -165,3 +172,16 @@ body {
 	color: var(--white);
 }
 
+@media (min-width: 992px) {
+	.main .calc {
+		width: 450px;
+	}
+
+	.main .calc__body {
+		gap: 20px;
+	}
+
+	.main .calc__top-theme {
+		margin-left: 9em;
+	}
+}
