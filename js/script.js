@@ -75,6 +75,13 @@ if (theme === 'light') {
 	lightBtn.style.backgroundColor = 'hsl(25, 98%, 40%)'
 }
 
+if (theme === 'violet') {
+	document.body.classList.add('violet')
+	darkBtn.style.backgroundColor = 'transparent'
+	lightBtn.style.backgroundColor = 'transparent'
+	violetBtn.style.backgroundColor = 'hsl(176, 100%, 44%)'
+}
+
 const toDarkMode = () => {
 	document.body.classList.remove('light')
 	document.body.classList.remove('violet')
