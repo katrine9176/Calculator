@@ -172,6 +172,19 @@ button:hover {
 	color: var(--white);
 }
 
+.attribution {
+	position: absolute;
+	bottom: 2em;
+	font-size: 1.4rem;
+	left: 50%;
+	transform: translateX(-50%);
+	color: var(--white);
+}
+
+.attribution a {
+	text-decoration: none;
+}
+
 @media (min-width: 992px) {
 	.main .calc {
 		width: 450px;
