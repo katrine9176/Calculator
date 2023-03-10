@@ -82,7 +82,7 @@ const toDarkMode = () => {
 	lightBtn.style.backgroundColor = 'transparent'
 	violetBtn.style.backgroundColor = 'transparent'
 	darkBtn.style.backgroundColor = 'hsl(25, 98%, 40%)'
-	theme = 'dark'
+	localStorage.setItem('theme', 'dark')
 }
 
 const toLightMode = () => {
@@ -92,7 +92,7 @@ const toLightMode = () => {
 	darkBtn.style.backgroundColor = 'transparent'
 	violetBtn.style.backgroundColor = 'transparent'
 	lightBtn.style.backgroundColor = 'hsl(25, 98%, 40%)'
-	theme = 'light'
+	localStorage.setItem('theme', 'light')
 }
 
 const toVioletMode = () => {
@@ -102,10 +102,8 @@ const toVioletMode = () => {
 	lightBtn.style.backgroundColor = 'transparent'
 	darkBtn.style.backgroundColor = 'transparent'
 	violetBtn.style.backgroundColor = 'hsl(176, 100%, 44%)'
-	theme = 'violet'
+	localStorage.setItem('theme', 'violet')
 }
-
-localStorage.setItem('theme', theme)
 
 equal.addEventListener('click', count)
 delBtn.addEventListener('click', del)
